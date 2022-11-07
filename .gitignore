@@ -128,3 +128,4 @@ iOSInjectionProject/
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
 Jordan.xcodeproj/project.xcworkspace/xcuserdata/kevinlima.xcuserdatad/UserInterfaceState.xcuserstate
+*.xcuserstate

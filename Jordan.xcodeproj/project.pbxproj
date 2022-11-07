@@ -7,66 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7E225F3C291931DA00207BD9 /* JordanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E225F3B291931DA00207BD9 /* JordanApp.swift */; };
-		7E225F3E291931DA00207BD9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E225F3D291931DA00207BD9 /* Persistence.swift */; };
-		7E225F41291931DA00207BD9 /* Jordan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E225F3F291931DA00207BD9 /* Jordan.xcdatamodeld */; };
-		7E225F43291931DA00207BD9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E225F42291931DA00207BD9 /* ContentView.swift */; };
-		7E225F45291931DA00207BD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E225F44291931DA00207BD9 /* Assets.xcassets */; };
-		7E225F49291931DB00207BD9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E225F48291931DB00207BD9 /* Preview Assets.xcassets */; };
-		7E225F53291931DB00207BD9 /* JordanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E225F52291931DB00207BD9 /* JordanTests.swift */; };
-		7E225F5D291931DB00207BD9 /* JordanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E225F5C291931DB00207BD9 /* JordanUITests.swift */; };
-		7E225F5F291931DB00207BD9 /* JordanUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E225F5E291931DB00207BD9 /* JordanUITestsLaunchTests.swift */; };
+		7ED55B5929195E47009E2E7C /* JordanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED55B5829195E47009E2E7C /* JordanApp.swift */; };
+		7ED55B5B29195E47009E2E7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED55B5A29195E47009E2E7C /* ContentView.swift */; };
+		7ED55B5D29195E48009E2E7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ED55B5C29195E48009E2E7C /* Assets.xcassets */; };
+		7ED55B6129195E48009E2E7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ED55B6029195E48009E2E7C /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		7E225F4F291931DB00207BD9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7E225F30291931D900207BD9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7E225F37291931D900207BD9;
-			remoteInfo = Jordan;
-		};
-		7E225F59291931DB00207BD9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7E225F30291931D900207BD9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7E225F37291931D900207BD9;
-			remoteInfo = Jordan;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		7E225F38291931DA00207BD9 /* Jordan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jordan.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E225F3B291931DA00207BD9 /* JordanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JordanApp.swift; sourceTree = "<group>"; };
-		7E225F3D291931DA00207BD9 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		7E225F40291931DA00207BD9 /* Jordan.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Jordan.xcdatamodel; sourceTree = "<group>"; };
-		7E225F42291931DA00207BD9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		7E225F44291931DA00207BD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7E225F46291931DB00207BD9 /* Jordan.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Jordan.entitlements; sourceTree = "<group>"; };
-		7E225F48291931DB00207BD9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7E225F4E291931DB00207BD9 /* JordanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JordanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E225F52291931DB00207BD9 /* JordanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JordanTests.swift; sourceTree = "<group>"; };
-		7E225F58291931DB00207BD9 /* JordanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JordanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E225F5C291931DB00207BD9 /* JordanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JordanUITests.swift; sourceTree = "<group>"; };
-		7E225F5E291931DB00207BD9 /* JordanUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JordanUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7ED55B5529195E47009E2E7C /* Jordan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jordan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ED55B5829195E47009E2E7C /* JordanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JordanApp.swift; sourceTree = "<group>"; };
+		7ED55B5A29195E47009E2E7C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7ED55B5C29195E48009E2E7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7ED55B5E29195E48009E2E7C /* Jordan.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Jordan.entitlements; sourceTree = "<group>"; };
+		7ED55B6029195E48009E2E7C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7E225F35291931D900207BD9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7E225F4B291931DB00207BD9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7E225F55291931DB00207BD9 /* Frameworks */ = {
+		7ED55B5229195E47009E2E7C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,75 +33,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7E225F2F291931D900207BD9 = {
+		7ED55B4C29195E47009E2E7C = {
 			isa = PBXGroup;
 			children = (
-				7E225F3A291931DA00207BD9 /* Jordan */,
-				7E225F51291931DB00207BD9 /* JordanTests */,
-				7E225F5B291931DB00207BD9 /* JordanUITests */,
-				7E225F39291931DA00207BD9 /* Products */,
+				7ED55B5729195E47009E2E7C /* Jordan */,
+				7ED55B5629195E47009E2E7C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		7E225F39291931DA00207BD9 /* Products */ = {
+		7ED55B5629195E47009E2E7C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7E225F38291931DA00207BD9 /* Jordan.app */,
-				7E225F4E291931DB00207BD9 /* JordanTests.xctest */,
-				7E225F58291931DB00207BD9 /* JordanUITests.xctest */,
+				7ED55B5529195E47009E2E7C /* Jordan.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7E225F3A291931DA00207BD9 /* Jordan */ = {
+		7ED55B5729195E47009E2E7C /* Jordan */ = {
 			isa = PBXGroup;
 			children = (
-				7E225F3B291931DA00207BD9 /* JordanApp.swift */,
-				7E225F3D291931DA00207BD9 /* Persistence.swift */,
-				7E225F42291931DA00207BD9 /* ContentView.swift */,
-				7E225F44291931DA00207BD9 /* Assets.xcassets */,
-				7E225F46291931DB00207BD9 /* Jordan.entitlements */,
-				7E225F3F291931DA00207BD9 /* Jordan.xcdatamodeld */,
-				7E225F47291931DB00207BD9 /* Preview Content */,
+				7ED55B5829195E47009E2E7C /* JordanApp.swift */,
+				7ED55B5A29195E47009E2E7C /* ContentView.swift */,
+				7ED55B5C29195E48009E2E7C /* Assets.xcassets */,
+				7ED55B5E29195E48009E2E7C /* Jordan.entitlements */,
+				7ED55B5F29195E48009E2E7C /* Preview Content */,
 			);
 			path = Jordan;
 			sourceTree = "<group>";
 		};
-		7E225F47291931DB00207BD9 /* Preview Content */ = {
+		7ED55B5F29195E48009E2E7C /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				7E225F48291931DB00207BD9 /* Preview Assets.xcassets */,
+				7ED55B6029195E48009E2E7C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		7E225F51291931DB00207BD9 /* JordanTests */ = {
-			isa = PBXGroup;
-			children = (
-				7E225F52291931DB00207BD9 /* JordanTests.swift */,
-			);
-			path = JordanTests;
-			sourceTree = "<group>";
-		};
-		7E225F5B291931DB00207BD9 /* JordanUITests */ = {
-			isa = PBXGroup;
-			children = (
-				7E225F5C291931DB00207BD9 /* JordanUITests.swift */,
-				7E225F5E291931DB00207BD9 /* JordanUITestsLaunchTests.swift */,
-			);
-			path = JordanUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7E225F37291931D900207BD9 /* Jordan */ = {
+		7ED55B5429195E47009E2E7C /* Jordan */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7E225F62291931DB00207BD9 /* Build configuration list for PBXNativeTarget "Jordan" */;
+			buildConfigurationList = 7ED55B6429195E48009E2E7C /* Build configuration list for PBXNativeTarget "Jordan" */;
 			buildPhases = (
-				7E225F34291931D900207BD9 /* Sources */,
-				7E225F35291931D900207BD9 /* Frameworks */,
-				7E225F36291931D900207BD9 /* Resources */,
+				7ED55B5129195E47009E2E7C /* Sources */,
+				7ED55B5229195E47009E2E7C /* Frameworks */,
+				7ED55B5329195E47009E2E7C /* Resources */,
 			);
 			buildRules = (
 			);
@@ -152,69 +86,25 @@
 			);
 			name = Jordan;
 			productName = Jordan;
-			productReference = 7E225F38291931DA00207BD9 /* Jordan.app */;
+			productReference = 7ED55B5529195E47009E2E7C /* Jordan.app */;
 			productType = "com.apple.product-type.application";
-		};
-		7E225F4D291931DB00207BD9 /* JordanTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7E225F65291931DB00207BD9 /* Build configuration list for PBXNativeTarget "JordanTests" */;
-			buildPhases = (
-				7E225F4A291931DB00207BD9 /* Sources */,
-				7E225F4B291931DB00207BD9 /* Frameworks */,
-				7E225F4C291931DB00207BD9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7E225F50291931DB00207BD9 /* PBXTargetDependency */,
-			);
-			name = JordanTests;
-			productName = JordanTests;
-			productReference = 7E225F4E291931DB00207BD9 /* JordanTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		7E225F57291931DB00207BD9 /* JordanUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7E225F68291931DB00207BD9 /* Build configuration list for PBXNativeTarget "JordanUITests" */;
-			buildPhases = (
-				7E225F54291931DB00207BD9 /* Sources */,
-				7E225F55291931DB00207BD9 /* Frameworks */,
-				7E225F56291931DB00207BD9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7E225F5A291931DB00207BD9 /* PBXTargetDependency */,
-			);
-			name = JordanUITests;
-			productName = JordanUITests;
-			productReference = 7E225F58291931DB00207BD9 /* JordanUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7E225F30291931D900207BD9 /* Project object */ = {
+		7ED55B4D29195E47009E2E7C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
-					7E225F37291931D900207BD9 = {
+					7ED55B5429195E47009E2E7C = {
 						CreatedOnToolsVersion = 14.1;
-					};
-					7E225F4D291931DB00207BD9 = {
-						CreatedOnToolsVersion = 14.1;
-						TestTargetID = 7E225F37291931D900207BD9;
-					};
-					7E225F57291931DB00207BD9 = {
-						CreatedOnToolsVersion = 14.1;
-						TestTargetID = 7E225F37291931D900207BD9;
 					};
 				};
 			};
-			buildConfigurationList = 7E225F33291931D900207BD9 /* Build configuration list for PBXProject "Jordan" */;
+			buildConfigurationList = 7ED55B5029195E47009E2E7C /* Build configuration list for PBXProject "Jordan" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -222,90 +112,42 @@
 				en,
 				Base,
 			);
-			mainGroup = 7E225F2F291931D900207BD9;
-			productRefGroup = 7E225F39291931DA00207BD9 /* Products */;
+			mainGroup = 7ED55B4C29195E47009E2E7C;
+			productRefGroup = 7ED55B5629195E47009E2E7C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7E225F37291931D900207BD9 /* Jordan */,
-				7E225F4D291931DB00207BD9 /* JordanTests */,
-				7E225F57291931DB00207BD9 /* JordanUITests */,
+				7ED55B5429195E47009E2E7C /* Jordan */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7E225F36291931D900207BD9 /* Resources */ = {
+		7ED55B5329195E47009E2E7C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E225F49291931DB00207BD9 /* Preview Assets.xcassets in Resources */,
-				7E225F45291931DA00207BD9 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7E225F4C291931DB00207BD9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7E225F56291931DB00207BD9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				7ED55B6129195E48009E2E7C /* Preview Assets.xcassets in Resources */,
+				7ED55B5D29195E48009E2E7C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7E225F34291931D900207BD9 /* Sources */ = {
+		7ED55B5129195E47009E2E7C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E225F3C291931DA00207BD9 /* JordanApp.swift in Sources */,
-				7E225F3E291931DA00207BD9 /* Persistence.swift in Sources */,
-				7E225F43291931DA00207BD9 /* ContentView.swift in Sources */,
-				7E225F41291931DA00207BD9 /* Jordan.xcdatamodeld in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7E225F4A291931DB00207BD9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7E225F53291931DB00207BD9 /* JordanTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7E225F54291931DB00207BD9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7E225F5F291931DB00207BD9 /* JordanUITestsLaunchTests.swift in Sources */,
-				7E225F5D291931DB00207BD9 /* JordanUITests.swift in Sources */,
+				7ED55B5B29195E47009E2E7C /* ContentView.swift in Sources */,
+				7ED55B5929195E47009E2E7C /* JordanApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		7E225F50291931DB00207BD9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7E225F37291931D900207BD9 /* Jordan */;
-			targetProxy = 7E225F4F291931DB00207BD9 /* PBXContainerItemProxy */;
-		};
-		7E225F5A291931DB00207BD9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7E225F37291931D900207BD9 /* Jordan */;
-			targetProxy = 7E225F59291931DB00207BD9 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		7E225F60291931DB00207BD9 /* Debug */ = {
+		7ED55B6229195E48009E2E7C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -363,7 +205,7 @@
 			};
 			name = Debug;
 		};
-		7E225F61291931DB00207BD9 /* Release */ = {
+		7ED55B6329195E48009E2E7C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -414,7 +256,7 @@
 			};
 			name = Release;
 		};
-		7E225F63291931DB00207BD9 /* Debug */ = {
+		7ED55B6529195E48009E2E7C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -452,7 +294,7 @@
 			};
 			name = Debug;
 		};
-		7E225F64291931DB00207BD9 /* Release */ = {
+		7ED55B6629195E48009E2E7C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -487,152 +329,31 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		7E225F66291931DB00207BD9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4RU7C2285D;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.KevinLima.JordanTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jordan.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Jordan";
-			};
-			name = Debug;
-		};
-		7E225F67291931DB00207BD9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4RU7C2285D;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.KevinLima.JordanTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jordan.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Jordan";
-			};
-			name = Release;
-		};
-		7E225F69291931DB00207BD9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4RU7C2285D;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.KevinLima.JordanUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Jordan;
-			};
-			name = Debug;
-		};
-		7E225F6A291931DB00207BD9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4RU7C2285D;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.KevinLima.JordanUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Jordan;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7E225F33291931D900207BD9 /* Build configuration list for PBXProject "Jordan" */ = {
+		7ED55B5029195E47009E2E7C /* Build configuration list for PBXProject "Jordan" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7E225F60291931DB00207BD9 /* Debug */,
-				7E225F61291931DB00207BD9 /* Release */,
+				7ED55B6229195E48009E2E7C /* Debug */,
+				7ED55B6329195E48009E2E7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7E225F62291931DB00207BD9 /* Build configuration list for PBXNativeTarget "Jordan" */ = {
+		7ED55B6429195E48009E2E7C /* Build configuration list for PBXNativeTarget "Jordan" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7E225F63291931DB00207BD9 /* Debug */,
-				7E225F64291931DB00207BD9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7E225F65291931DB00207BD9 /* Build configuration list for PBXNativeTarget "JordanTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7E225F66291931DB00207BD9 /* Debug */,
-				7E225F67291931DB00207BD9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7E225F68291931DB00207BD9 /* Build configuration list for PBXNativeTarget "JordanUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7E225F69291931DB00207BD9 /* Debug */,
-				7E225F6A291931DB00207BD9 /* Release */,
+				7ED55B6529195E48009E2E7C /* Debug */,
+				7ED55B6629195E48009E2E7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		7E225F3F291931DA00207BD9 /* Jordan.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				7E225F40291931DA00207BD9 /* Jordan.xcdatamodel */,
-			);
-			currentVersion = 7E225F40291931DA00207BD9 /* Jordan.xcdatamodel */;
-			path = Jordan.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
-	rootObject = 7E225F30291931D900207BD9 /* Project object */;
+	rootObject = 7ED55B4D29195E47009E2E7C /* Project object */;
 }

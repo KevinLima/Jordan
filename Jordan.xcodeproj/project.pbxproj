@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E5CB199291AA6A6005360D3 /* TeamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5CB198291AA6A6005360D3 /* TeamModel.swift */; };
+		7E5CB19B291AA7D5005360D3 /* Team-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5CB19A291AA7D4005360D3 /* Team-ViewModel.swift */; };
 		7ED55B5929195E47009E2E7C /* JordanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED55B5829195E47009E2E7C /* JordanApp.swift */; };
 		7ED55B5B29195E47009E2E7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED55B5A29195E47009E2E7C /* ContentView.swift */; };
 		7ED55B5D29195E48009E2E7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ED55B5C29195E48009E2E7C /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E5CB198291AA6A6005360D3 /* TeamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamModel.swift; sourceTree = "<group>"; };
+		7E5CB19A291AA7D4005360D3 /* Team-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Team-ViewModel.swift"; sourceTree = "<group>"; };
 		7ED55B5529195E47009E2E7C /* Jordan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jordan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ED55B5829195E47009E2E7C /* JordanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JordanApp.swift; sourceTree = "<group>"; };
 		7ED55B5A29195E47009E2E7C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +58,8 @@
 			children = (
 				7ED55B5829195E47009E2E7C /* JordanApp.swift */,
 				7ED55B5A29195E47009E2E7C /* ContentView.swift */,
+				7E5CB198291AA6A6005360D3 /* TeamModel.swift */,
+				7E5CB19A291AA7D4005360D3 /* Team-ViewModel.swift */,
 				7ED55B5C29195E48009E2E7C /* Assets.xcassets */,
 				7ED55B5E29195E48009E2E7C /* Jordan.entitlements */,
 				7ED55B5F29195E48009E2E7C /* Preview Content */,
@@ -141,6 +147,8 @@
 			files = (
 				7ED55B5B29195E47009E2E7C /* ContentView.swift in Sources */,
 				7ED55B5929195E47009E2E7C /* JordanApp.swift in Sources */,
+				7E5CB199291AA6A6005360D3 /* TeamModel.swift in Sources */,
+				7E5CB19B291AA7D5005360D3 /* Team-ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,19 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var teamViewModel = TeamViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            List(teamViewModel.teamList) { team in
+                HStack{
+                    Text(team.name)
+                    Spacer()
+                    Text("\(team.offense)")
+                    Spacer()
+                    Text("\(team.defence)")
+                }
+            }
+            
+            .navigationTitle("Teams")
+            .toolbar{
+                Button("Refresh"){
+                    teamViewModel.generateTeams()
+                }
+            }
         }
-        .padding()
     }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
     }
 }

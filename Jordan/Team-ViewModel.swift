@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension ContentView {
+extension ContentView.TeamPoule {
     @MainActor class TeamViewModel: ObservableObject {
         @Published var teamList = [Team]()
         var teamNames = ["Nederland","Senegal","Ecuador","Qatar"]
@@ -25,7 +25,6 @@ extension ContentView {
                     offense: Int.random(in: 1..<10),
                     defence: Int.random(in: 1..<10)
                 )
-                
                 teamList.insert(newTeam, at: 0)
             }
         }

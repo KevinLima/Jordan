@@ -8,26 +8,43 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var teamViewModel = TeamViewModel()
+    
     
     var body: some View {
         NavigationView {
-            List(teamViewModel.teamList) { team in
-                HStack{
-                    Text(team.name)
-                    Spacer()
-                    Text("\(team.offense)")
-                    Spacer()
-                    Text("\(team.defence)")
-                }
+            VStack(){
+                TeamPoule()
+                Spacer()
             }
-            
             .navigationTitle("Teams")
-            .toolbar{
-                Button("Refresh"){
-                    teamViewModel.generateTeams()
+        }
+    }
+    
+    struct TeamPoule: View {
+        @StateObject private var vm = TeamViewModel()
+        
+        var body: some View{
+            Button("Refresh"){
+                vm.generateTeams()
+            }
+            Grid(alignment: .leading, horizontalSpacing: 30){
+                GridRow{
+                    Text("Country")
+                    Text("Off")
+                    Text("Def")
+                }
+                .fontWeight(.bold)
+                
+                ForEach(vm.teamList) { team in
+                    GridRow{
+                        Text(team.name)
+                        Text(team.offString)
+                        Text(team.defString)
+                    }
                 }
             }
+            .font(.system(size: 25))
+            Spacer()
         }
     }
     
@@ -37,3 +54,4 @@ struct ContentView: View {
         }
     }
 }
+

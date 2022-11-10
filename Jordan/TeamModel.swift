@@ -7,11 +7,19 @@
 
 import Foundation
 
-struct Team: Identifiable, Codable {
+struct Team: Identifiable {
     var id = UUID()
     var name: String
     var offense: Int
     var defence: Int
+    
+    var offString: String {
+        return String(offense)
+    }
+    
+    var defString: String {
+        return String(defence)
+    }
     
     static var exampleTeam = Team(name: "Hoogvliet", offense: 5, defence: 7)
 }

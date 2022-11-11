@@ -7,8 +7,10 @@
 
 import SwiftUI
 
-struct View: View {
+struct TeamView: View {
+    @State private var isPresenting = false
     @StateObject private var vm = TeamViewModel()
+   
     var body: some View {
         NavigationView {
             VStack(){
@@ -30,6 +32,11 @@ struct View: View {
                 }
                 .font(.system(size: 25))
                 Spacer()
+                Button("START") {
+                    isPresenting = true
+                }
+                NavigationLink("", destination: ResultView(teamList: vm.teamList), isActive: $isPresenting)
+                Spacer()
             }
             .navigationTitle("Teams")
             .toolbar {
@@ -40,9 +47,9 @@ struct View: View {
         }
     }
     
-    struct ContentView_Previews: PreviewProvider {
+    struct TeamView_Previews: PreviewProvider {
         static var previews: some View {
-            View()
+            TeamView()
         }
     }
 }

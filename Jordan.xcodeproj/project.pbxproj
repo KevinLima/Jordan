@@ -9,8 +9,11 @@
 /* Begin PBXBuildFile section */
 		7E5CB199291AA6A6005360D3 /* TeamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5CB198291AA6A6005360D3 /* TeamModel.swift */; };
 		7E5CB19B291AA7D5005360D3 /* Team-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5CB19A291AA7D4005360D3 /* Team-ViewModel.swift */; };
+		7EC19A24291D257D00F29198 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC19A23291D257D00F29198 /* ResultView.swift */; };
+		7EC19A28291D2E3B00F29198 /* Result-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC19A27291D2E3B00F29198 /* Result-ViewModel.swift */; };
+		7EC19A2A291D561A00F29198 /* ResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC19A29291D561A00F29198 /* ResultModel.swift */; };
 		7ED55B5929195E47009E2E7C /* JordanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED55B5829195E47009E2E7C /* JordanApp.swift */; };
-		7ED55B5B29195E47009E2E7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED55B5A29195E47009E2E7C /* ContentView.swift */; };
+		7ED55B5B29195E47009E2E7C /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED55B5A29195E47009E2E7C /* TeamView.swift */; };
 		7ED55B5D29195E48009E2E7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ED55B5C29195E48009E2E7C /* Assets.xcassets */; };
 		7ED55B6129195E48009E2E7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ED55B6029195E48009E2E7C /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -18,9 +21,12 @@
 /* Begin PBXFileReference section */
 		7E5CB198291AA6A6005360D3 /* TeamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamModel.swift; sourceTree = "<group>"; };
 		7E5CB19A291AA7D4005360D3 /* Team-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Team-ViewModel.swift"; sourceTree = "<group>"; };
+		7EC19A23291D257D00F29198 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		7EC19A27291D2E3B00F29198 /* Result-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result-ViewModel.swift"; sourceTree = "<group>"; };
+		7EC19A29291D561A00F29198 /* ResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultModel.swift; sourceTree = "<group>"; };
 		7ED55B5529195E47009E2E7C /* Jordan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jordan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ED55B5829195E47009E2E7C /* JordanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JordanApp.swift; sourceTree = "<group>"; };
-		7ED55B5A29195E47009E2E7C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7ED55B5A29195E47009E2E7C /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
 		7ED55B5C29195E48009E2E7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7ED55B5E29195E48009E2E7C /* Jordan.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Jordan.entitlements; sourceTree = "<group>"; };
 		7ED55B6029195E48009E2E7C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -37,6 +43,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7EC19A25291D290900F29198 /* Team */ = {
+			isa = PBXGroup;
+			children = (
+				7ED55B5A29195E47009E2E7C /* TeamView.swift */,
+				7E5CB198291AA6A6005360D3 /* TeamModel.swift */,
+				7E5CB19A291AA7D4005360D3 /* Team-ViewModel.swift */,
+			);
+			path = Team;
+			sourceTree = "<group>";
+		};
+		7EC19A26291D2DEA00F29198 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				7EC19A23291D257D00F29198 /* ResultView.swift */,
+				7EC19A29291D561A00F29198 /* ResultModel.swift */,
+				7EC19A27291D2E3B00F29198 /* Result-ViewModel.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
 		7ED55B4C29195E47009E2E7C = {
 			isa = PBXGroup;
 			children = (
@@ -57,9 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				7ED55B5829195E47009E2E7C /* JordanApp.swift */,
-				7ED55B5A29195E47009E2E7C /* ContentView.swift */,
-				7E5CB198291AA6A6005360D3 /* TeamModel.swift */,
-				7E5CB19A291AA7D4005360D3 /* Team-ViewModel.swift */,
+				7EC19A25291D290900F29198 /* Team */,
+				7EC19A26291D2DEA00F29198 /* Result */,
 				7ED55B5C29195E48009E2E7C /* Assets.xcassets */,
 				7ED55B5E29195E48009E2E7C /* Jordan.entitlements */,
 				7ED55B5F29195E48009E2E7C /* Preview Content */,
@@ -145,10 +170,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7ED55B5B29195E47009E2E7C /* ContentView.swift in Sources */,
+				7ED55B5B29195E47009E2E7C /* TeamView.swift in Sources */,
 				7ED55B5929195E47009E2E7C /* JordanApp.swift in Sources */,
+				7EC19A24291D257D00F29198 /* ResultView.swift in Sources */,
 				7E5CB199291AA6A6005360D3 /* TeamModel.swift in Sources */,
 				7E5CB19B291AA7D5005360D3 /* Team-ViewModel.swift in Sources */,
+				7EC19A2A291D561A00F29198 /* ResultModel.swift in Sources */,
+				7EC19A28291D2E3B00F29198 /* Result-ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

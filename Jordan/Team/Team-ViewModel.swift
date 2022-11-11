@@ -7,10 +7,10 @@
 
 import Foundation
 
-extension ContentView.TeamPoule {
+extension TeamView {
     @MainActor class TeamViewModel: ObservableObject {
-        @Published var teamList = [Team]()
-        var teamNames = ["Nederland","Senegal","Ecuador","Qatar"]
+        @Published var teamList = [Team]()        
+        private var teamNames = ["Nederland","Senegal","Ecuador","Qatar"]
         
         init() {
             self.generateTeams()

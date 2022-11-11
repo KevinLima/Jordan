@@ -21,5 +21,5 @@ struct Team: Identifiable {
         return String(defence)
     }
     
-    static var exampleTeam = Team(name: "Hoogvliet", offense: 5, defence: 7)
+    static var exampleTeam = Team(name: "Mexico", offense: 5, defence: 7)
 }

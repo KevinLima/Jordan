@@ -13,4 +13,11 @@ struct PoolResult: Identifiable {
     var points: Int
     var goalsScored: Int
     var goalsConceded: Int
+    
+    static var examplePool: [PoolResult] = [
+        PoolResult(team: Team.exampleTeam, points: 2, goalsScored: 10, goalsConceded: 5),
+        PoolResult(team: Team.exampleTeam, points: 3, goalsScored: 10, goalsConceded: 5),
+        PoolResult(team: Team.exampleTeam, points: 3, goalsScored: 11, goalsConceded: 6),
+        PoolResult(team: Team.exampleTeam, points: 3, goalsScored: 6, goalsConceded: 0),
+    ]
 }

@@ -15,8 +15,8 @@ struct ResultView: View {
     }
     
     var body: some View {
-        VStack(){
-            Grid(alignment: .leading, horizontalSpacing: 30){
+        VStack(alignment: .leading, spacing: 30){
+            Grid(horizontalSpacing: 30){
                 GridRow{
                     Text("Country")
                     Text("P")
@@ -35,6 +35,12 @@ struct ResultView: View {
                         Text("\(item.goalsConceded)")
                     }
                 }
+            }
+            VStack(alignment: .leading) {
+                Text("P = Points")
+                Text("GB = Goal Balance (Doelsaldo)")
+                Text("G = Goals scored (Doelpunten voor)")
+                Text("GC = Goals conceded (Doelpunten tegen)")
             }
         }
     }

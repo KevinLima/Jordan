@@ -14,11 +14,13 @@ extension ResultView {
         @Published var poolTable = [PoolResult]()
         
         func setTeamList(team: [Team]){
-            self.teamList = team
+            teamList = team
             simulateAllGames()
-            print("amount of games:  \(resultList.count)")
             poolTable = createPoolResult()
-            print(poolTable)
+            
+            //poolTable = PoolResult.examplePool
+            sortPool()
+            //printMatchResults(matches: resultList)
         }
         
         func simulateAllGames(){
@@ -104,9 +106,16 @@ extension ResultView {
             return newPool
         }
         
+        func sortPool(){
+            self.poolTable.sort(by: {
+                ($0.points, ($0.goalsScored - $0.goalsConceded), $0.goalsScored) >
+                ($1.points, ($1.goalsScored - $1.goalsConceded), $1.goalsScored)
+            })
+        }
+        
         func printMatchResults(matches: [MatchResult]){
             for match in matches {
-                print("\(match.homeTeam.name) (\(match.homeTeam.offense) , \(match.homeTeam.defence)) VS \(match.awayTeam.name) (\(match.awayTeam.offense) , \(match.awayTeam.defence)) . \(match.homeTeamGoals) - \(match.AwayTeamGoals)")
+                print("\(match.homeTeam.name) (\(match.homeTeam.offense),\(match.homeTeam.defence)) VS \(match.awayTeam.name) (\(match.awayTeam.offense),\(match.awayTeam.defence)). Result \(match.homeTeamGoals) - \(match.AwayTeamGoals)")
             }
         }
     }

@@ -11,12 +11,14 @@ extension ResultView {
     @MainActor class ResultViewModel: ObservableObject {
         @Published var teamList = [Team]()
         @Published var resultList = [MatchResult]()
+        @Published var poolTable = [PoolResult]()
         
         func setTeamList(team: [Team]){
             self.teamList = team
             simulateAllGames()
             print("amount of games:  \(resultList.count)")
-            printMatchResults(matches: resultList)
+            poolTable = createPoolResult()
+            print(poolTable)
         }
         
         func simulateAllGames(){
@@ -64,6 +66,42 @@ extension ResultView {
                 }
             }
             return goals
+        }
+        
+        func createPoolResult()->[PoolResult]{
+            var pool = [PoolResult]()
+            
+            for match in self.resultList {
+                var homePoints = 0
+                var awayPoints = 0
+                
+                if match.homeTeamGoals > match.AwayTeamGoals{
+                    homePoints = 3
+                } else if match.homeTeamGoals == match.AwayTeamGoals{
+                    homePoints = 1
+                    awayPoints = 1
+                } else {
+                    awayPoints = 3
+                }
+                
+                pool = self.createPoolResult(pool: pool, team: match.homeTeam, points: homePoints, goalsScored: match.homeTeamGoals, goalsConceded: match.AwayTeamGoals)
+                pool = self.createPoolResult(pool: pool, team: match.awayTeam, points: awayPoints, goalsScored: match.AwayTeamGoals, goalsConceded: match.homeTeamGoals)
+            }
+            
+            return pool
+        }
+        
+        func createPoolResult(pool: [PoolResult], team: Team, points: Int, goalsScored: Int, goalsConceded: Int)->[PoolResult] {
+            var newPool = pool
+            
+            if let item = pool.firstIndex(where: {$0.team.id == team.id}){
+                newPool[item].points += points
+                newPool[item].goalsScored += goalsScored
+                newPool[item].goalsConceded += goalsConceded
+            } else {
+                newPool.append(PoolResult(team: team, points: points, goalsScored: goalsScored, goalsConceded: goalsConceded))
+            }
+            return newPool
         }
         
         func printMatchResults(matches: [MatchResult]){

@@ -12,6 +12,7 @@
 		7EC19A24291D257D00F29198 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC19A23291D257D00F29198 /* ResultView.swift */; };
 		7EC19A28291D2E3B00F29198 /* Result-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC19A27291D2E3B00F29198 /* Result-ViewModel.swift */; };
 		7EC19A2A291D561A00F29198 /* ResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC19A29291D561A00F29198 /* ResultModel.swift */; };
+		7EC19A2C291E442C00F29198 /* PoolResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC19A2B291E442C00F29198 /* PoolResult.swift */; };
 		7ED55B5929195E47009E2E7C /* JordanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED55B5829195E47009E2E7C /* JordanApp.swift */; };
 		7ED55B5B29195E47009E2E7C /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED55B5A29195E47009E2E7C /* TeamView.swift */; };
 		7ED55B5D29195E48009E2E7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ED55B5C29195E48009E2E7C /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 		7EC19A23291D257D00F29198 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		7EC19A27291D2E3B00F29198 /* Result-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result-ViewModel.swift"; sourceTree = "<group>"; };
 		7EC19A29291D561A00F29198 /* ResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultModel.swift; sourceTree = "<group>"; };
+		7EC19A2B291E442C00F29198 /* PoolResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoolResult.swift; sourceTree = "<group>"; };
 		7ED55B5529195E47009E2E7C /* Jordan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jordan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ED55B5829195E47009E2E7C /* JordanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JordanApp.swift; sourceTree = "<group>"; };
 		7ED55B5A29195E47009E2E7C /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				7EC19A23291D257D00F29198 /* ResultView.swift */,
 				7EC19A29291D561A00F29198 /* ResultModel.swift */,
 				7EC19A27291D2E3B00F29198 /* Result-ViewModel.swift */,
+				7EC19A2B291E442C00F29198 /* PoolResult.swift */,
 			);
 			path = Result;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				7ED55B5929195E47009E2E7C /* JordanApp.swift in Sources */,
 				7EC19A24291D257D00F29198 /* ResultView.swift in Sources */,
 				7E5CB199291AA6A6005360D3 /* TeamModel.swift in Sources */,
+				7EC19A2C291E442C00F29198 /* PoolResult.swift in Sources */,
 				7E5CB19B291AA7D5005360D3 /* Team-ViewModel.swift in Sources */,
 				7EC19A2A291D561A00F29198 /* ResultModel.swift in Sources */,
 				7EC19A28291D2E3B00F29198 /* Result-ViewModel.swift in Sources */,

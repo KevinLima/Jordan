@@ -15,7 +15,28 @@ struct ResultView: View {
     }
     
     var body: some View {
-        Text(vm.teamList.first!.name)
+        VStack(){
+            Grid(alignment: .leading, horizontalSpacing: 30){
+                GridRow{
+                    Text("Country")
+                    Text("P")
+                    Text("GB")
+                    Text("G")
+                    Text("GC")
+                }
+                .fontWeight(.bold)
+                
+                ForEach(vm.poolTable) { item in
+                    GridRow{
+                        Text(item.team.name)
+                        Text("\(item.points)")
+                        Text("\(item.goalsScored - item.goalsConceded)")
+                        Text("\(item.goalsScored)")
+                        Text("\(item.goalsConceded)")
+                    }
+                }
+            }
+        }
     }
 }
 

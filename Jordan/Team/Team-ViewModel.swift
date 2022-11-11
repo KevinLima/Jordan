@@ -17,11 +17,13 @@ extension TeamView {
         }
         
         func generateTeams() {
+            // in case of a refresh
             teamList.removeAll()
             
             for teamName in teamNames {
                 let newTeam = Team(
                     name: teamName,
+                    // offence and defence stats are randomly generated
                     offense: Int.random(in: 1..<10),
                     defence: Int.random(in: 1..<10)
                 )

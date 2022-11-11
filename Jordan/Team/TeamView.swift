@@ -10,7 +10,7 @@ import SwiftUI
 struct TeamView: View {
     @State private var isPresenting = false
     @StateObject private var vm = TeamViewModel()
-   
+    
     var body: some View {
         NavigationView {
             VStack(){
@@ -35,7 +35,7 @@ struct TeamView: View {
                 Button("START") {
                     isPresenting = true
                 }
-                NavigationLink("", destination: ResultView(teamList: vm.teamList), isActive: $isPresenting)
+                NavigationLink("", destination: PoolResultView(teamList: vm.teamList), isActive: $isPresenting)
                 Spacer()
             }
             .navigationTitle("Teams")

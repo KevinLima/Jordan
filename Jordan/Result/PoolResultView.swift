@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ResultView: View {
+struct PoolResultView: View {
     @ObservedObject private var vm = ResultViewModel()
     
     init(teamList: [Team]) {
@@ -48,6 +48,6 @@ struct ResultView: View {
 
 struct ResultView_Previews: PreviewProvider {
     static var previews: some View {
-        ResultView(teamList: [Team.exampleTeam])
+        PoolResultView(teamList: [Team.exampleTeam])
     }
 }

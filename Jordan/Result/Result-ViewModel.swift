@@ -16,30 +16,24 @@ extension ResultView {
             self.teamList = team
             simulateAllGames()
             print("amount of games:  \(resultList.count)")
+            printMatchResults(matches: resultList)
         }
         
         func simulateAllGames(){
-            var homeTeam = teamList[0]
+            var opponentList = teamList
             
             for team in teamList {
-                if team.id != homeTeam.id{
-                    let teamIndex = self.teamList.firstIndex { item in
-                        item.id == team.id
-                    }!
-                    
-                    if teamList.indices.contains(teamIndex + 1){
-                        let awayTeam = teamList[teamIndex+1]
-                        
-                        self.resultList.append(self.simulateGame(homeTeam: homeTeam, awayTeam: awayTeam))
-                    }
+                opponentList.remove(at: 0)
+                
+                if opponentList.count == 0 {
+                    break
                 }
-                else {
-                    continue
+                
+                for opponent in opponentList {
+                    self.resultList.append(self.simulateGame(homeTeam: team, awayTeam: opponent))
                 }
             }
         }
-        
-        
         
         func simulateGame(homeTeam: Team, awayTeam: Team) -> MatchResult{
             let homeShotsOnTarget = getShotsOnTarget(defence: awayTeam.defence)
@@ -70,6 +64,12 @@ extension ResultView {
                 }
             }
             return goals
+        }
+        
+        func printMatchResults(matches: [MatchResult]){
+            for match in matches {
+                print("\(match.homeTeam.name) (\(match.homeTeam.offense) , \(match.homeTeam.defence)) VS \(match.awayTeam.name) (\(match.awayTeam.offense) , \(match.awayTeam.defence)) . \(match.homeTeamGoals) - \(match.AwayTeamGoals)")
+            }
         }
     }
 }
